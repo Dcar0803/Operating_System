@@ -13,7 +13,7 @@ describe('System Utilities', () => {
 
     });//end of the getCPUs 
 
-    describe('getSystemInform', () => {
+    describe('getSystemInfo', () => {
 
         it('should return an object with architecture and total memory', () => {
             const info = getSystemInfo();
