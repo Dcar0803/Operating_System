@@ -11,6 +11,13 @@ function getCPUs(){
 
 }
 
+/**
+ * * Returns the system architecture and total memory.
+ * @returns {object} An object containing:
+ * - `architecture` (string): The system architecture (e.g., 'x64').
+ * - `totalMemory` (number): The total memory in bytes.
+ */
+
 function getSystemInfo(){
 
     return{
