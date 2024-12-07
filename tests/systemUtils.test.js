@@ -1,4 +1,4 @@
-const { getCPUs } = require('../src/systemUtils');
+const { getCPUs, getSystemInfo,hasEnoughMemory } = require('../src/systemUtils');
 
 
 describe('System Utilities', () => {
