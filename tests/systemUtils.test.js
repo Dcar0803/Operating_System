@@ -24,6 +24,18 @@ describe('System Utilities', () => {
         });//end of it
 
     });//end of getSystemInfo
+
+    describe('hasEnoughMemory', () => {
+        it('should return true if there is enough memory for allocation', () => {
+            expect(hasEnoughMemory(1)).toBe(true); // Assuming 1 MB is allocatable
+        });//end of it
+
+        it('should return false if there is not enough memory for allocation', () => {
+            const totalMemoryInMB = require('os').totalmem() / (1024 * 1024);
+            expect(hasEnoughMemory(totalMemoryInMB + 1)).toBe(false); // Over the limit
+        });//end of it
+
+    });//end of hasEnoughMemory
     
 }); //end of  the Systems Utilities 
 
