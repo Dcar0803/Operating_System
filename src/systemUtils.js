@@ -27,5 +27,5 @@ function getSystemInfo(){
     }//end of return
 }
 
-module.exports= {getCPUs};
+module.exports= {getCPUs, getSystemInfo};
 
