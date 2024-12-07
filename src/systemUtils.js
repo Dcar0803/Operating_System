@@ -11,5 +11,14 @@ function getCPUs(){
 
 }
 
+function getSystemInfo(){
+
+    return{
+        architecture: os.arch(),
+        totalMemory: os.totalmem(),
+
+    }//end of return
+}
+
 module.exports= {getCPUs};
 
