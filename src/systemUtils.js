@@ -27,6 +27,12 @@ function getSystemInfo(){
     }//end of return
 }
 
+/**
+ * Checks if the system has enough memory to allocate the specified number of megabytes.
+ * @param {number} requiredMB - The number of megabytes to allocate.
+ * @returns {boolean} `true` if the system has enough memory, otherwise `false`.
+ */
+
 function hasEnoughMemory(requiredMB){
 
     const availableMemoryMB = os.totalmem() / (1024 * 1024);
