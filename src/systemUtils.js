@@ -27,5 +27,11 @@ function getSystemInfo(){
     }//end of return
 }
 
+function hasEnoughMemory(requiredMB){
+
+    const availableMemoryMB = os.totalmem() / (1024 * 1024);
+    return availableMemoryMB >= requiredMB;
+}
+
 module.exports= {getCPUs, getSystemInfo};
 
