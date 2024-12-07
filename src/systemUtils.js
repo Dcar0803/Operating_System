@@ -11,3 +11,5 @@ function getCPUs(){
 
 }
 
+module.exports= {getCPUs};
+
