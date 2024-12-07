@@ -39,5 +39,5 @@ function hasEnoughMemory(requiredMB){
     return availableMemoryMB >= requiredMB;
 }
 
-module.exports= {getCPUs, getSystemInfo};
+module.exports= {getCPUs, getSystemInfo, hasEnoughMemory};
 
